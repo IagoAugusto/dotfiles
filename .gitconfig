@@ -1,0 +1,6 @@
+[alias]
+  co=checkout
+  st=status
+[user]
+	email = mileo.iago@gmail.com
+	name = IagoMileo
