@@ -1,6 +1,7 @@
 [alias]
   co=checkout
   st=status
+  b=branch
 [user]
 	email = mileo.iago@gmail.com
 	name = IagoMileo
