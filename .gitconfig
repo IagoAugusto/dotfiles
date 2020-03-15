@@ -1,7 +1,30 @@
 [alias]
-  co=checkout
-  st=status
-  b=branch
+	st=status
+	pushm=push origin master
+	pullm=pull origin master
+	ps=push origin
+	plo=pull origin
+	co=checkout
+	br=branch -r
+	b=branch
+	merge-current= !sh -c \"git pullm && git ck master && git merge --no-ff $(git symbolic-ref --short HEAD) && git pushm\"
+  delall=git branch | grep -v "master" | xargs git branch -D 
+	pushlm= git push live master && git push origin master
+	pulld=pull origin develop
+	delall= !sh -c \"git branch | grep -v "develop" | xargs git branch -D\"
+	lg=log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"
 [user]
 	email = mileo.iago@gmail.com
-	name = IagoMileo
+	name = IagoAugusto
+	password = 1995out05
+[color]
+  diff = auto
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[credential]
+	helper = cache
+[core]
+	editor = vim
