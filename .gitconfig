@@ -16,7 +16,6 @@
 [user]
 	email = mileo.iago@gmail.com
 	name = IagoAugusto
-	password = 1995out05
 [color]
   diff = auto
 [filter "lfs"]
