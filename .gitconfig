@@ -2,6 +2,7 @@
   co=checkout
   st=status
   b=branch
+  br=branch --remote
 [user]
 	email = mileo.iago@gmail.com
 	name = IagoMileo
