@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/iagomileo/.oh-my-zsh"
+export ZSH="/home/gandalf/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -99,13 +99,15 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 ### Added by Zplugin's installer
-#zplugin light zdharma/fast-syntax-highlighting
-
-#zplugin light zsh-users/zsh-autosuggestions
-
-#zplugin light zsh-users/zsh-completions
-
 source "$HOME/.zplugin/bin/zplugin.zsh"
 autoload -Uz _zplugin
 (( ${+_comps} )) && _comps[zplugin]=_zplugin
+source "$HOME/.bash_profile"
+
 ### End of Zplugin installer's chunk
+zplugin light zsh-users/zsh-syntax-highlighting.git 
+zplugin light zdharma/fast-syntax-highlighting
+zplugin light zsh-users/zsh-autosuggestions
+zplugin light zsh-users/zsh-completions
+
+tmux

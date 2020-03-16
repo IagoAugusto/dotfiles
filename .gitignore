@@ -4,4 +4,6 @@
 *.*
 
 .viminfo
-.yarnrc
+
+#Vscode extensions
+.vscode/extensions/*
